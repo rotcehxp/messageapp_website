@@ -1,7 +1,7 @@
 /**
  * Created by manuel on 4/24/18.
  */
-angular.module('PartAppUI').controller('PartsDetailController', ['$http', '$log', '$scope', '$location', '$routeParams',
+angular.module('MessageApp').controller('GroupsMessagesController', ['$http', '$log', '$scope', '$location', '$routeParams',
     function($http, $log, $scope, $location, $routeParams) {
         // This variable lets you access this controller
         // from within the callbacks of the $http object
@@ -10,15 +10,15 @@ angular.module('PartAppUI').controller('PartsDetailController', ['$http', '$log'
 
         // This variable hold the information on the part
         // as read from the REST API
-        var partDetails = {};
+        var groupsMessages = {};
 
-        this.loadPartDetails = function(){
+        this.loadGroupMessages = function(){
             // Get the target part id from the parameter in the url
             // using the $routerParams object
-            var partId = $routeParams.pid;
+            var gid = $routeParams.gid;
 
             // Now create the url with the route to talk with the rest API
-            var reqURL = "http://localhost:5000/PartApp/parts/" + partId;
+            var reqURL = "http://localhost:5000/messageapp_website/groups/" + gid +"/messages";
             console.log("reqURL: " + reqURL);
             // Now issue the http request to the rest API
             $http.get(reqURL).then(
@@ -54,5 +54,5 @@ angular.module('PartAppUI').controller('PartsDetailController', ['$http', '$log'
             );
         };
 
-        this.loadPartDetails();
+        this.loadGroupMessages();
 }]);

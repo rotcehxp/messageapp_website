@@ -1,0 +1,21 @@
+<div ng-cloak style="align-content: center">
+        <table class="center stripe">
+        <thead>
+        <tr>
+            <th>Group Id</th>
+            <th>Name</th>
+            <th>Admin Username</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="group in groupsCtrl.groupList">
+                <td>{{group.gid}}</td>
+                <td>{{group.gname}}</td>
+                <td>{{group.adminusername}}</td>
+                <td><a class="waves-effect  blue lighten-1 btn-small" ng-click="groupsCtrl.groupsMessages(group.gid)">Ver</a></td>
+
+            </tr>
+        </tbody>
+        </table>
+
+</div>

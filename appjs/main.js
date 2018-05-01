@@ -1,6 +1,6 @@
 (function() {
 
-    var app = angular.module('PartAppUI',['ngRoute']);
+    var app = angular.module('MessageApp',['ngRoute']);
 
     app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
         $routeProvider.when('/groups', {
@@ -24,9 +24,9 @@
             controller: 'membersController',
             controllerAs : 'membersCtrl'
         }).when('/groups/:gid/messages', {
-            templateUrl: 'pages/messages.html',
-            controller: 'messagesController',
-            controllerAs : 'messagesCtrl'
+            templateUrl: 'pages/group_messages.html',
+            controller: 'groupsMessagesController',
+            controllerAs : 'groupsMessagesCtrl'
         }).when('/groups/:gid/messages/by/:pid', {
             templateUrl: 'pages/messages.html',
             controller: 'messagesBySenderController',
@@ -40,3 +40,5 @@
         });
     }]);
 })();
+
+

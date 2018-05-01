@@ -1,19 +1,27 @@
 /**
  * Created by manuel on 4/24/18.
  */
-angular.module('messageapp').controller('GroupsController', ['$http', '$log', '$scope', '$location',
+
+ console.log("HERE");
+angular.module('MessageApp').controller('GroupsController', ['$http', '$log', '$scope', '$location',
     function($http, $log, $scope, $location) {
+
+         console.log("HERE 2");
+
+
         var thisCtrl = this;
 
         this.groupList = [];
         this.counter  = 2;
         this.newText = "";
 
+        console.log(this);
+
         this.groups = function(){
             // Get the list of groups from the servers via REST API
 
             // First set up the url for the route
-            var url = "http://localhost:5000/messageapp/groups";
+            var url = "http://localhost:5000/MessageApp/groups";
 
             // Now set up the $http object
             // It has two function call backs, one for success and one for error
@@ -52,9 +60,10 @@ angular.module('messageapp').controller('GroupsController', ['$http', '$log', '$
 
             $log.error("Groups Loaded: ", JSON.stringify(thisCtrl.groupList));
         };
-        this.partDetails = function (pid) {
-            $location.url('/partsdetails/' + pid);
+        console.log(this);
+        this.groupsMessages = function (gid) {
+            $location.url('/group/' + gid+'/messages');
         }
-        this.loadParts();
+        this.groups();
 
 }]);
