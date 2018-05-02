@@ -11,8 +11,8 @@
             <tr ng-repeat="group in groupsCtrl.groupList">
                 <td>{{group.gid}}</td>
                 <td>{{group.gname}}</td>
-                <td>{{group.adminusername}}</td>
-                <td><a class="waves-effect  blue lighten-1 btn-small" ng-click="groupsCtrl.groupsMessages(group.gid)">Ver</a></td>
+                <td>{{group.admin_username}}</td>
+                <td><a class="waves-effect  green lighten-1 btn-small" ng-click="groupsCtrl.groupsMessages(group.gid)">Ver</a></td>
 
             </tr>
         </tbody>

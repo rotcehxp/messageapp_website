@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0fb2e461-a906-4415-a9e3-55ddb2c6111c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appjs/groups.js" beforeDir="false" afterPath="$PROJECT_DIR$/appjs/groups.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appjs/groups_messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/appjs/groups_messages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appjs/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/appjs/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/groups_messagges.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/groups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/groups_messages.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/groups_messages.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +20,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+            <state relative-caret-position="300">
+              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -87,6 +86,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="706" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -122,8 +122,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+        <state relative-caret-position="300">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>

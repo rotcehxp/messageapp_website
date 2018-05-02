@@ -5,8 +5,7 @@
                 <div class="card-content">
                     <span class="card-title">Group Messages</span>
                     <table>
-                        <tbody ng-repeat="message in groupsMessagesCtrl.messagesList">
-                            
+                        <tbody ng-repeat="message in groupsMessagesCtrl.messagesList" ng-init="likes=groupsMessagesCtrl.loadNumberOfLikes(message.mid)">
                             <tr>
                                 <th>Sent by: </th>
                                 <th>{{message.username}}</th>
@@ -15,9 +14,22 @@
                                 <th>Content: </th>
                                 <th>{{message.content}}</th>
                             </tr>
-                            <tr>
+                            <tr style="border-bottom: solid bold green">
                                 <th>Date: </th>
                                 <th>{{message.date}}</th>
+                            </tr>
+                            <tr style="border-bottom: solid bold green">
+                                <th>Likes: </th>
+                                <th>{{groupsMessagesCtrl.likes}}</th>
+                            </tr>
+                            <tr style="border-bottom: solid bold green">
+                                <th>Dislikes: </th>
+                                <th>{{groupsMessagesCtrl.likes}}</th>
+                            </tr>
+
+                            <tr>
+                                <th style="height: 3px; background: green; padding:0;"></th>
+                                <th style="height: 3px; background: green; padding:0;"></th>
                             </tr>
                         </tbody>
                     </table>
