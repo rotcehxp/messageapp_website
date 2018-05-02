@@ -24,8 +24,8 @@
             controller: 'membersController',
             controllerAs : 'membersCtrl'
         }).when('/groups/:gid/messages', {
-            templateUrl: 'pages/group_messages.html',
-            controller: 'groupsMessagesController',
+            templateUrl: 'pages/groups_messages.html',
+            controller: 'GroupsMessagesController',
             controllerAs : 'groupsMessagesCtrl'
         }).when('/groups/:gid/messages/by/:pid', {
             templateUrl: 'pages/messages.html',

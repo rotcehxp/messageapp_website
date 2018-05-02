@@ -2,20 +2,14 @@
  * Created by manuel on 4/24/18.
  */
 
- console.log("HERE");
 angular.module('MessageApp').controller('GroupsController', ['$http', '$log', '$scope', '$location',
     function($http, $log, $scope, $location) {
-
-         console.log("HERE 2");
-
 
         var thisCtrl = this;
 
         this.groupList = [];
-        this.counter  = 2;
+        this.counter = 2;
         this.newText = "";
-
-        console.log(this);
 
         this.groups = function(){
             // Get the list of groups from the servers via REST API
@@ -60,10 +54,11 @@ angular.module('MessageApp').controller('GroupsController', ['$http', '$log', '$
 
             $log.error("Groups Loaded: ", JSON.stringify(thisCtrl.groupList));
         };
-        console.log(this);
+
         this.groupsMessages = function (gid) {
-            $location.url('/group/' + gid+'/messages');
+            $location.url('/groups/' + gid + '/messages');
         }
-        this.groups();
+
+        this.groups(); 
 
 }]);
